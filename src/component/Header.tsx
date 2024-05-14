@@ -33,7 +33,7 @@ const Header = () => {
             >
               {Links.map((link) => (
                 <li key={link.name} className="my-8 cursor-pointer font-medium md:my-0 md:ml-5">
-                  <Link to={link.link} activeClass="active" smooth={true} spy={true} className="transition-all duration-500">
+                  <Link to={link.link} activeClass="active" smooth={true} spy={true} className="transition-all duration-500" onClick={() => setOpen(!open)}>
                     {link.name}
                   </Link>
                 </li>
