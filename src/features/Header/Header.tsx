@@ -6,8 +6,8 @@ const Header = () => {
   // ナビゲーションリンク
   let Links = [
     { name: 'Profile', link: 'profile' },
+    { name: 'Works', link: 'works' },
     { name: 'Skills', link: 'skills' },
-    { name: 'Works', link: 'works' }
   ]
 
   let [open, setOpen] = useState(false) // ハンバーガーメニューの開閉
