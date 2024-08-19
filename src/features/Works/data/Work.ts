@@ -19,10 +19,18 @@ export interface WorkItem {
 export class Wark {
   /**
    * view
-   */
-  public View(): WorkItem[] {
-    const list: WorkItem[] = [
-      {
+  */
+ public View(): WorkItem[] {
+   const list: WorkItem[] = [
+     {
+       title: '国会劇場',
+       image: diet,
+       detail: 'わかりにくい国会会議の内容を楽しく観れます！',
+       skills: ['React', 'TypeScript', 'tailwind css', 'Docker', 'Python', 'MySQL', 'Cloudflare', 'proxmox', 'OpenAI'],
+       member: 'チーム',
+       url: 'https://diet-theater.noonyuu.com/'
+     },
+     {
         title: 'ムーブメントアーム',
         image: move,
         detail: 'モジュールと手の動きが連動していて動きに合わせてスライドを操作できる',
@@ -45,14 +53,6 @@ export class Wark {
         detail: 'ランダムに与えられるお題について制限時間内に記事を書き、記事の良さを競う',
         skills: ['Next.js', 'TypeScript', 'tailwind css', 'Docker', 'Go', 'MySQL'],
         member: 'チーム'
-      },
-      {
-        title: '国会劇場',
-        image: diet,
-        detail: 'わかりにくい国会中継をチャット形式で要約しわかりやすく',
-        skills: ['React', 'TypeScript', 'tailwind css', 'Docker', 'Python', 'MySQL', 'Cloudflare', 'proxmox', 'OpenAI'],
-        member: 'チーム',
-        url: 'https://diet-theater.noonyuu.com/'
       },
       { title: 'portfolio', image: profile, detail: '当サイト', skills: ['Next.js', 'TypeScript', 'tailwind css', 'Docker'], member: '個人' },
       {

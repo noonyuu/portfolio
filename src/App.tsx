@@ -1,6 +1,6 @@
 import Layout from './pages/Layout'
 import Header from './features/Header/Header'
-import Footer from './features/Footer/footer'
+import Footer from './features/Footer/Footer'
 
 function App() {
   return (
