@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { XMarkIcon } from '@heroicons/react/24/solid'
+import { XMarkIcon , LinkIcon} from '@heroicons/react/24/solid'
 
 interface Props {
   title: string
@@ -17,20 +17,20 @@ const Card:FC<Props> = (props) => {
       {!showModal && (
         <div className="relative flex justify-center">
           <div className="h-96 w-full rounded-lg border border-gray-200 bg-white shadow">
-            <img src={props.image} alt="" className="h-52 w-full rounded-tl-lg rounded-tr-lg" loading='lazy'/>
+            <img src={props.image} alt="" className="max-h-52 w-full rounded-tl-lg rounded-tr-lg" />
             <div className="mt-5 h-32 space-y-5 text-center">
               <h5 className="font-mono text-sm font-bold tracking-tight text-gray-900">{props.title}</h5>
               <p className="mb-3 font-normal text-gray-700 dark:text-gray-400"></p>
               <p className="text-sm font-light text-black">{props.detail}</p>
-              <div className="absolute bottom-6 flex w-full justify-end">
+              <div className="flex w-full justify-end ">
                 <button type="button" className="mr-4" onClick={() => setShowModal(!showModal)}>
                   詳細
                 </button>
               </div>
               <div className="flex w-full justify-end">
                 {!props.url ? null : (
-                  <a href={`${props.url}`} target="_blank" className="absolute bottom-0 left-0 ml-4 text-xs text-blue-300">
-                    {props.url}
+                  <a href={`${props.url}`} target='_blank' className="absolute bottom-0 left-0 ml-4 text-sm size-8">
+                    <LinkIcon />
                   </a>
                 )}
               </div>
@@ -40,9 +40,9 @@ const Card:FC<Props> = (props) => {
       )}
 
       {showModal && (
-        <div className="fixed left-0 top-0 z-10 flex h-full w-full items-center justify-center bg-gray-800 bg-opacity-50">
-          <div className="relative w-11/12 rounded-lg bg-white p-4 text-black lg:w-2/3 lg:p-8">
-            <button className="absolute right-0 top-0 w-12 p-2 bg-white rounded-full" onClick={() => setShowModal(!setShowModal)}>
+        <div className="fixed left-0 top-0 flex h-full w-full items-center justify-center bg-gray-800 bg-opacity-50 z-10">
+          <div className="relative w-2/3 rounded-lg bg-white p-4 text-black lg:w-1/3 lg:p-8">
+            <button className="absolute right-0 top-0 w-12 p-2" onClick={() => setShowModal(!setShowModal)}>
               <XMarkIcon color="black" className="text-xl" />
             </button>
             <img src={props.image} alt="" className="w-full rounded-lg" />
