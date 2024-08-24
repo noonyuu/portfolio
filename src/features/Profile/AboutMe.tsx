@@ -4,7 +4,7 @@ import carrot from '../../assets/icon/profile.webp'
 
 export const AboutMe = () => {
   return (
-    <section className="size-full">
+    <section>
       <div className="shadow-custom flex h-[448px] w-[288px] flex-col rounded-sm border border-black bg-[rgb(9,9,9)] md:h-[288px] md:w-[448px]">
         {/* icon */}
         <div className="mx-4 mt-4 flex h-full space-x-4">
