@@ -1,14 +1,15 @@
-import Layout from './pages/Layout'
-import Header from './features/Header/Header'
-import Footer from './features/Footer/Footer'
+import { Routers } from './Routers'
 
 function App() {
   return (
-    <div className="mx-auto">
-      <Header />
-      <Layout />
-      <Footer />
-    </div>
+    // <div className="mx-auto size-full">
+    //   {/* <Header /> */}
+    //   <Layout />
+    //   {/* <Footer /> */}
+    // </div>
+    <>
+      <Routers />
+    </>
   )
 }
 
