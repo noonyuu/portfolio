@@ -21,5 +21,8 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": ["src", "src/common", "src/component", "src/features", "src/pages", "src/App.tsx", "src/main.tsx", "src/vite-env.d.ts"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "references": [{ "path": "./tsconfig.node.json" }],
+  "paths": {
+    "@/*": ["src/*"]
+  }
 }
