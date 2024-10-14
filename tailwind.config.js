@@ -6,7 +6,11 @@ export default {
     extend: {
       colors: {
         'main-color': '#FAF0D7',
-        'sub-color': '#EEEDEB'
+        'sub-color': '#EEEDEB',
+        'card-color': 'rgba(97, 97, 97, 0.5)'
+      },
+      backgroundImage: {
+        'card-gradient': 'linear-gradient(113deg, rgba(255, 255, 255, 0.47) 0%, rgba(255, 255, 255, 0) 100%)',
       },
       boxShadow: {
         custom: '5px 4px 4px 5px rgba(185, 185, 185, 0.25)'
