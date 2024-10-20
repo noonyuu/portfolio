@@ -50,32 +50,28 @@ const Layout = () => {
     return () => cancelAnimationFrame(animationId)
   }, [getSkillPosition, getWorkPosition, getPositionCard])
 
-  const onWorkClick = () => {
-
-  }
-
   return (
     <main className="relative size-full bg-[#121212]">
-      <div className="grid min-h-screen grid-cols-[1fr_auto_1fr] grid-rows-[1fr_auto_1fr]">
-        <div className=""></div>
+      <div className="grid min-h-screen grid-cols-2 md:grid-cols-[1fr_auto_1fr] md:grid-rows-[1fr_auto_1fr]">
+        <div className="hidden md:block"></div>
         {/* skill balloon */}
-        <div className="relative z-10">
+        <div className="z-10 md:relative">
           <img src={skill} alt="skill balloon" className="z-20 animate-skill" />
           <div className="absolute animate-skill" style={{ left: '46px', top: '185px', width: '11px', height: '13px', borderRadius: '50%' }} ref={skillRef}></div>
         </div>
         <Canvas x={skillPos.x} y={skillPos.y} cw={cardPos.cw} ct={cardPos.ct} cl={cardPos.cl} />
         {/* work balloon */}
         <div className="relative z-10 pt-3">
-          <Link to='/work'>
-            <img src={work} alt="work balloon" className="animate-work z-20" />
+          <Link to="/work">
+            <img src={work} alt="work balloon" className="z-20 animate-work" />
           </Link>
-          <div className="animate-work absolute" style={{ left: '46px', top: '197px', width: '11px', height: '13px', borderRadius: '50%' }} ref={workRef}></div>
+          <div className="absolute animate-work" style={{ left: '46px', top: '197px', width: '11px', height: '13px', borderRadius: '50%' }} ref={workRef}></div>
         </div>
         <Canvas x={workPos.x} y={workPos.y} cw={cardPos.cw} ct={cardPos.ct} cl={cardPos.cr} />
-        <div className="flex items-end">
-          <img src={instagram} alt="instagram balloon" className="animate-instagram" />
+        <div className="hidden items-end md:flex">
+          <img src={instagram} alt="instagram balloon" className="invisible animate-instagram md:visible" />
         </div>
-        <div ref={cardRef}>
+        <div ref={cardRef} className="-translate-y-1/2 md:translate-x-0 md:translate-y-0 absolute left-1/2 top-1/2 -translate-x-1/2 md:static">
           <AboutMe />
         </div>
         <div className=""></div>

@@ -18,7 +18,7 @@ const Canvas: FC<Props> = (props) => {
 
       if (context) {
         // Canvas のサイズを設定
-        canvas.width = props.cw
+        canvas.width = props.cw * 0.92
         canvas.height = props.ct
 
         // Canvas をクリア
@@ -37,7 +37,7 @@ const Canvas: FC<Props> = (props) => {
     }
   }, [props.x, props.y, props.ct, props.cl]) // 依存関係リストにprops.ct, props.clも追加
 
-  return <canvas ref={canvasRef} style={{ position: 'absolute', left: `${props.cl}px`, zIndex: 1 }} className="canvas" />
+  return <canvas ref={canvasRef} style={{ position: 'absolute', left: `${props.cl}px`, zIndex: 1 }} className="canvas hidden md:block" />
 }
 
 export default Canvas
