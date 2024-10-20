@@ -38,7 +38,6 @@ export class Wark {
         detail: '時刻表をウィジェットに表示するアプリ',
         skills: ['Swift', 'OpenAI', 'firebase'],
         member: 'チーム',
-        url: 'https://raid-clock.noony'
       },
       // { title: '叫流式便器', image: raidclock, detail: '時刻表をウィジェットに表示するアプリ', skills: ['Swift', 'OpenAI', 'firebase'], member: 'チーム', url: 'https://raid-clock.noony' },
       {

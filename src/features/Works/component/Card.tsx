@@ -27,9 +27,11 @@ const Card: FC<Props> = (props) => {
                 {/* icon */}
                 <div className="absolute flex space-x-2">
                   {/* <img src={GitHubIcon} alt="git" className="size-4" /> */}
-                  <a href={`${props.url}`} target="_blank">
-                    <LinkIcon className="size-4" />
-                  </a>
+                  {props.url && (
+                    <a href={`${props.url}`} target="_blank">
+                      <LinkIcon className="size-4" />
+                    </a>
+                  )}
                 </div>
                 {/* title */}
                 <div className="flex h-full items-center justify-center">{props.title}</div>
