@@ -10,15 +10,16 @@ interface Props {
 
 const Canvas: FC<Props> = (props) => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null)
+  const resizeTimerRef = useRef<number | null>(null)
 
   useEffect(() => {
     const canvas = canvasRef.current
     if (canvas) {
       const context = canvas.getContext('2d')
-
       if (context) {
         // Canvas のサイズを設定
-        canvas.width = props.cw * 0.92
+        const canvasWidth = Math.max(props.cw)
+        canvas.width = canvasWidth
         canvas.height = props.ct
 
         // Canvas をクリア
@@ -35,7 +36,34 @@ const Canvas: FC<Props> = (props) => {
         context.stroke()
       }
     }
-  }, [props.x, props.y, props.ct, props.cl]) // 依存関係リストにprops.ct, props.clも追加
+  }, [props.x, props.y, props.ct, props.cl, props.cw])
+
+  // リサイズイベントリスナー
+  useEffect(() => {
+    const handleResize = () => {
+      // 既存のタイマーをクリア
+      // リサイズが続いている間はリロードしないようにしてる
+      if (resizeTimerRef.current) {
+        window.clearTimeout(resizeTimerRef.current)
+      }
+
+      // 500msの間リサイズが行われなければページをリロード
+      resizeTimerRef.current = window.setTimeout(() => {
+        window.location.reload()
+      }, 500)
+    }
+
+    // ウィンドウのサイズ変更時にリサイズイベントを発火
+    window.addEventListener('resize', handleResize)
+
+    // resizeイベントのリスナーを削除する
+    return () => {
+      window.removeEventListener('resize', handleResize)
+      if (resizeTimerRef.current) {
+        window.clearTimeout(resizeTimerRef.current)
+      }
+    }
+  }, [])
 
   return <canvas ref={canvasRef} style={{ position: 'absolute', left: `${props.cl}px`, zIndex: 1 }} className="canvas hidden md:block" />
 }
