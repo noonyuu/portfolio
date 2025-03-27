@@ -1,11 +1,14 @@
 import React, { FC } from 'react'
-import { XMarkIcon, LinkIcon } from '@heroicons/react/24/solid'
-// import GitHubIcon from '@/assets/icon/git-icon.svg'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/css'
+import { Autoplay } from 'swiper/modules'
+
+import { LinkIcon } from '@heroicons/react/24/solid'
 import { SKILLS } from '@/common/Skills'
 
 interface Props {
   title: string
-  image: string
+  image: string[]
   detail: string
   skills: string[]
   member: string
@@ -13,15 +16,37 @@ interface Props {
 }
 
 const Card: FC<Props> = (props) => {
-  const [showModal, setShowModal] = React.useState(false)
+  const [showModal] = React.useState(false)
   return (
     <>
       {!showModal && (
         <div className="relative w-fit rounded-lg bg-card-color">
           <div className="h-52 w-80 rounded-lg bg-card-gradient">
             <div className="flex h-1/2 w-full space-x-2 p-2">
-              <div className="w-full">
-                <img src={props.image} alt="" className="h-full w-full rounded-md" />
+              <div className="h-[88px] w-36">
+                {/* <img src={props.image} alt="" className="h-full w-full rounded-md" loading="lazy" /> */}
+                <Swiper
+                  spaceBetween={30}
+                  centeredSlides={true}
+                  autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false
+                  }}
+                  pagination={{
+                    clickable: true
+                  }}
+                  navigation={true}
+                  modules={[Autoplay]}
+                  className="mySwiper"
+                >
+                  {props.image.map((image, index) => (
+                    <SwiperSlide key={index}>
+                      <div className="relative h-[88px] w-36 overflow-hidden rounded-md">
+                        <img src={image} alt="" className="h-full w-full object-cover" loading="lazy" />
+                      </div>
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
               </div>
               <div className="relative size-full flex-col">
                 {/* icon */}
@@ -55,29 +80,7 @@ const Card: FC<Props> = (props) => {
         </div>
       )}
 
-      {showModal && (
-        <div className="fixed left-0 top-0 z-10 flex h-full w-full items-center justify-center bg-gray-800 bg-opacity-50">
-          <div className="relative w-2/3 rounded-lg bg-white p-4 text-black lg:w-1/3 lg:p-8">
-            <button className="absolute right-0 top-0 w-12 p-2" onClick={() => setShowModal(!setShowModal)}>
-              <XMarkIcon color="black" className="text-xl" />
-            </button>
-            <img src={props.image} alt="" className="w-full rounded-lg" />
-            <span>{props.member}</span>
-            <h2 className="my-4 text-center">{props.title}</h2>
-            <p>{props.detail}</p>
-            <div className="mt-4">
-              <h3 className="font-semibold">Skills</h3>
-              <div className="mt-2 grid grid-cols-2 gap-2">
-                {props.skills.map((skill, index) => (
-                  <span key={index} className="ml-4">
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
+      {showModal && <div className="fixed left-0 top-0 z-10 flex h-full w-full items-center justify-center bg-gray-800 bg-opacity-50"></div>}
     </>
   )
 }
