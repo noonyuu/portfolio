@@ -80,7 +80,7 @@ export class Wark {
       },
 
       {
-        title: 'RaidClock',
+        title: 'RideClock',
         image: [raidclock],
         detail: '時刻表をウィジェットに表示するアプリ',
         skills: ['Swift', 'OpenAI', 'firebase'],
