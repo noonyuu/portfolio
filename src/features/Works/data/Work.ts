@@ -6,7 +6,7 @@ import diet from '../images/diet-agenda.webp'
 import diet2 from '../images/diet-theater.webp'
 import profile from '../images/profile.png'
 import tuna from '../images/tunagari.webp'
-import fountain from '../images/fountain.png'
+import fountain from '../images/fountain.webp'
 import raidclock from '../images/raidclock.webp'
 
 export interface WorkItem {
