@@ -84,7 +84,7 @@ const Layout = () => {
         </div>
 
         {/* AboutMe in center */}
-        <div ref={cardRef} className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:static md:col-start-2 md:translate-x-0 md:translate-y-0">
+        <div ref={cardRef} className="absolute left-1/2 top-2/3 -translate-x-1/2 -translate-y-2/3 md:static md:col-start-2 md:translate-x-0 md:translate-y-0">
           <AboutMe />
         </div>
       </div>
