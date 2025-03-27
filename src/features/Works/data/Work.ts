@@ -8,6 +8,12 @@ import profile from '../images/profile.png'
 import tuna from '../images/tunagari.webp'
 import fountain from '../images/fountain.webp'
 import raidclock from '../images/raidclock.webp'
+import benkiHard from '../images/benki-hard.webp'
+import benkiWeb from '../images/benki-web.webp'
+import work from '../images/work.webp'
+import coupon from '../images/coupon.webp'
+import presentation from '../images/presentation.webp'
+import bell from '../images/bell.webp'
 
 export interface WorkItem {
   title: string
@@ -24,6 +30,46 @@ export class Wark {
    */
   public View(): WorkItem[] {
     const list: WorkItem[] = [
+      {
+        title: '真・実況雑談版・改',
+        image: [presentation],
+        detail: 'プレゼンテーションを盛り上げるchrome拡張。\nプレゼンテーション中にもらったコメントをプレゼンターのスクリーンリアルタイムで表示・コメントデータの保存ができる',
+        skills: ['React', 'Go', 'Cloudflare', 'Docker'],
+        member: 'チーム',
+        url: 'https://x.com/geek_pjt/status/1903738124729237846'
+      },
+      {
+        title: 'すごいクーポン管理アプリ',
+        image: [coupon],
+        detail: 'コンビニやファミレスでもらったクーポンを管理するアプリ',
+        skills: ['Flutter', 'Swift', 'Hono', 'D1'],
+        member: 'チーム',
+        url: 'https://x.com/geek_pjt/status/1891056762037453123'
+      },
+      {
+        title: '約束の大地',
+        image: [work],
+        detail: '直近の予定を新しいタブで表示するChrome拡張',
+        skills: ['HTML', 'CSS', 'JavaScript'],
+        member: 'チーム',
+        url: 'https://x.com/geek_pjt/status/1880902430428459388'
+      },
+      {
+        title: '108の金',
+        image: [bell],
+        detail: '年越しの瞬間に鐘を108回鳴らすサイト\nおみくじもあるよ',
+        skills: ['React', 'Next.js', 'tailwindcss', 'Three.js'],
+        member: 'チーム',
+        url: 'https://bell.noonyuu.com/'
+      },
+      {
+        title: '叫流式便器',
+        image: [benkiHard, benkiWeb],
+        detail: '憎しみの気持ちを叫び心のうんこを流す便器',
+        skills: ['React', 'Three.js', 'tailwindcss', 'Go', 'Docker', 'Cloudflare', 'MongoDB'],
+        member: 'チーム',
+        url: 'https://benki.noonyuu.com/'
+      },
       {
         title: '国会劇場',
         image: [diet, diet2],

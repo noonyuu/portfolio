@@ -12,6 +12,13 @@ import firebase from '@/assets/skill-icon/firebase.svg'
 import Flutter from '@/assets/skill-icon/flutter.svg'
 import next from '@/assets/skill-icon/next.svg'
 import swift from '@/assets/skill-icon/swift.svg'
+import mongodb from '@/assets/skill-icon/mongodb.svg'
+import Threejs from '@/assets/skill-icon/threejs.svg'
+import html from '@/assets/skill-icon/html.svg'
+import css from '@/assets/skill-icon/css.svg'
+import javascript from '@/assets/skill-icon/javascript.svg'
+import hono from '@/assets/skill-icon/hono.webp'
+import d1 from '@/assets/skill-icon/D1-wb.webp'
 
 export const SKILLS = [
   {
@@ -69,5 +76,33 @@ export const SKILLS = [
   {
     icon: swift,
     name: 'Swift'
+  },
+  {
+    icon: mongodb,
+    name: 'MongoDB'
+  },
+  {
+    icon: Threejs,
+    name: 'Three.js'
+  },
+  {
+    icon: html,
+    name: 'HTML'
+  },
+  {
+    icon: css,
+    name: 'CSS'
+  },
+  {
+    icon: javascript,
+    name: 'JavaScript'
+  },
+  {
+    icon: hono,
+    name: 'Hono'
+  },
+  {
+    icon: d1,
+    name: 'D1'
   }
 ]
