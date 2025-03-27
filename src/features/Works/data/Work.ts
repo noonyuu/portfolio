@@ -14,6 +14,7 @@ import work from '../images/work.webp'
 import coupon from '../images/coupon.webp'
 import presentation from '../images/presentation.webp'
 import bell from '../images/bell.webp'
+import tab from '../images/tab.webp'
 
 export interface WorkItem {
   title: string
@@ -45,6 +46,14 @@ export class Wark {
         skills: ['Flutter', 'Swift', 'Hono', 'D1'],
         member: 'チーム',
         url: 'https://x.com/geek_pjt/status/1891056762037453123'
+      },
+      {
+        title: 'すごいタブ整理',
+        image: [tab],
+        detail: 'タブの並びを整理するChrome拡張',
+        skills: ['HTML', 'CSS', 'JavaScript'],
+        member: '個人',
+        url: 'https://chromewebstore.google.com/detail/%E3%81%99%E3%81%94%E3%81%84%E3%82%BF%E3%83%96%E6%95%B4%E7%90%86/fldmahcldfbpeghkleaelfhdpphjfooj?hl=ja&utm_source=ext_sidebar'
       },
       {
         title: '約束の大地',
