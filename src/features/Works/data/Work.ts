@@ -116,7 +116,7 @@ export class Wark {
         title: 'TunaGari',
         image: [tuna],
         detail: '2つの単語のつながりから生成された画像を元にアイディアを出すアイディア出し支援サイト',
-        skills: ['React', 'TypeScript', 'tailwind css', 'Firebase'],
+        skills: ['React', 'TypeScript', 'tailwindcss', 'firebase'],
         member: 'チーム'
       },
       {
