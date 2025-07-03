@@ -46,7 +46,7 @@ export class Wark {
         title: '狂愛',
         image: [crazyLove1, crazyLove2],
         detail: 'あなたの推しの『鼓動』をリアルタイムに感じ、日々の生活で真の推し愛を体現!',
-        skills: ['Swift', 'Firebase'],
+        skills: ['Swift', 'firebase'],
         member: 'チーム',
         url: 'https://x.com/geek_pjt/status/1936715137425297548'
       },
