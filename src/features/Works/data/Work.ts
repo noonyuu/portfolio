@@ -18,6 +18,7 @@ import tab from '../images/tab.webp'
 import runHub from '../images/runhub.webp'
 import crazyLove1 from '../images/crazy-love-1.webp'
 import crazyLove2 from '../images/crazy-love-2.webp'
+import syoumei from '../images/syoumei.webp'
 
 export interface WorkItem {
   title: string
@@ -51,20 +52,28 @@ export class Wark {
         url: 'https://x.com/geek_pjt/status/1936715137425297548'
       },
       {
-        title: 'すごい実況雑談版',
-        image: [presentation],
-        detail: 'プレゼンテーションを盛り上げるchrome拡張。\nプレゼンテーション中にもらったコメントをプレゼンターのスクリーンリアルタイムで表示・コメントデータの保存ができる',
-        skills: ['React', 'Go', 'Cloudflare', 'Docker'],
-        member: 'チーム',
-        url: 'https://chromewebstore.google.com/detail/%E3%81%99%E3%81%94%E3%81%84%E5%AE%9F%E6%B3%81%E9%9B%91%E8%AB%87%E7%89%88/laiclcbminpoiomeoobbbbiajcecelpn?authuser=0&hl=ja'
-      },
-      {
         title: 'すごいクーポン管理アプリ',
         image: [coupon],
         detail: 'コンビニやファミレスでもらったクーポンを管理するアプリ',
         skills: ['Flutter', 'Swift', 'Hono', 'D1'],
         member: 'チーム',
         url: 'https://x.com/geek_pjt/status/1891056762037453123'
+      },
+      {
+        title: 'すごい証明写真機',
+        image: [syoumei],
+        detail: 'プレゼンテーションを盛り上げるchrome拡張。\nプレゼンテーション中にもらったコメントをプレゼンターのスクリーンリアルタイムで表示・コメントデータの保存ができる',
+        skills: ['React', 'Hono', 'Cloudflare'],
+        member: 'チーム',
+        url: 'https://chromewebstore.google.com/detail/%E3%81%99%E3%81%94%E3%81%84%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/ebfkmjmlfclbgbdflgkegbkjjljhjjga?authuser=0&hl=ja'
+      },
+      {
+        title: 'すごい実況雑談版',
+        image: [presentation],
+        detail: 'プレゼンテーションを盛り上げるchrome拡張。\nプレゼンテーション中にもらったコメントをプレゼンターのスクリーンリアルタイムで表示・コメントデータの保存ができる',
+        skills: ['React', 'Go', 'Cloudflare', 'Docker'],
+        member: 'チーム',
+        url: 'https://chromewebstore.google.com/detail/%E3%81%99%E3%81%94%E3%81%84%E5%AE%9F%E6%B3%81%E9%9B%91%E8%AB%87%E7%89%88/laiclcbminpoiomeoobbbbiajcecelpn?authuser=0&hl=ja'
       },
       {
         title: 'すごいタブ整理',
