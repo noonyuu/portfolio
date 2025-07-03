@@ -5,7 +5,7 @@ import carrot from '../../assets/icon/profile.webp'
 export const AboutMe = () => {
   return (
     <section>
-      <div className="flex h-[448px] w-[288px] flex-col rounded-sm border border-black bg-[rgb(9,9,9)] shadow-custom md:h-[288px] md:w-[448px]">
+      <div className="shadow-custom flex h-[448px] w-[288px] flex-col rounded-sm border border-black bg-[rgb(9,9,9)] md:h-[288px] md:w-[448px]">
         {/* icon */}
         <div className="mx-4 mt-4 flex h-full space-x-4">
           <a href="https://x.com/noonyuu">
@@ -15,9 +15,8 @@ export const AboutMe = () => {
             <img src={git} alt="github icon" className="size-6" />
           </a>
           <div className="flex grow justify-end">
-            <img src={carrot} alt="" className="h-[90px] w-[78px]" />
+            <img src={carrot} alt="" className="h-24 w-20" />
           </div>
-          {/* 78 x 90 */}
         </div>
         {/* name */}
         <div className="flex h-full flex-col items-center justify-center text-white">
@@ -28,7 +27,7 @@ export const AboutMe = () => {
         {/* other */}
         <div className="mb-4 flex h-full flex-col justify-end">
           <p className="ml-6 text-sm text-white">学生(26卒)</p>
-          <p className="ml-14 text-sm text-white">趣味 : ラグビー観戦・ハッカソン</p>
+          <p className="ml-14 text-sm text-white">趣味 : ラグビー観戦・ハッカソン・運動</p>
         </div>
       </div>
     </section>
