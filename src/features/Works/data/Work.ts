@@ -41,12 +41,12 @@ export class Wark {
         url: 'https://apps.apple.com/jp/app/runhub/id6747999408'
       },
       {
-        title: '真・実況雑談版・改',
+        title: 'すごい実況雑談版',
         image: [presentation],
         detail: 'プレゼンテーションを盛り上げるchrome拡張。\nプレゼンテーション中にもらったコメントをプレゼンターのスクリーンリアルタイムで表示・コメントデータの保存ができる',
         skills: ['React', 'Go', 'Cloudflare', 'Docker'],
         member: 'チーム',
-        url: 'https://x.com/geek_pjt/status/1903738124729237846'
+        url: 'https://chromewebstore.google.com/detail/%E3%81%99%E3%81%94%E3%81%84%E5%AE%9F%E6%B3%81%E9%9B%91%E8%AB%87%E7%89%88/laiclcbminpoiomeoobbbbiajcecelpn?authuser=0&hl=ja'
       },
       {
         title: 'すごいクーポン管理アプリ',
