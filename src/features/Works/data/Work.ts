@@ -15,6 +15,7 @@ import coupon from '../images/coupon.webp'
 import presentation from '../images/presentation.webp'
 import bell from '../images/bell.webp'
 import tab from '../images/tab.webp'
+import runHub from '../images/runhub.webp'
 
 export interface WorkItem {
   title: string
@@ -31,6 +32,14 @@ export class Wark {
    */
   public View(): WorkItem[] {
     const list: WorkItem[] = [
+      {
+        title: 'RunHub',
+        image: [runHub],
+        detail: '日々の運動をコミット！',
+        skills: ['Swift'],
+        member: '個人',
+        url: 'https://apps.apple.com/jp/app/runhub/id6747999408'
+      },
       {
         title: '真・実況雑談版・改',
         image: [presentation],
