@@ -16,6 +16,8 @@ import presentation from '../images/presentation.webp'
 import bell from '../images/bell.webp'
 import tab from '../images/tab.webp'
 import runHub from '../images/runhub.webp'
+import crazyLove1 from '../images/crazy-love-1.webp'
+import crazyLove2 from '../images/crazy-love-2.webp'
 
 export interface WorkItem {
   title: string
@@ -39,6 +41,14 @@ export class Wark {
         skills: ['Swift'],
         member: '個人',
         url: 'https://apps.apple.com/jp/app/runhub/id6747999408'
+      },
+      {
+        title: '狂愛',
+        image: [crazyLove1, crazyLove2],
+        detail: 'あなたの推しの『鼓動』をリアルタイムに感じ、日々の生活で真の推し愛を体現!',
+        skills: ['Swift', 'Firebase'],
+        member: 'チーム',
+        url: 'https://x.com/geek_pjt/status/1936715137425297548'
       },
       {
         title: 'すごい実況雑談版',
