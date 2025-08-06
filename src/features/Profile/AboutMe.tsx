@@ -5,7 +5,7 @@ import carrot from '../../assets/icon/profile.webp'
 export const AboutMe = () => {
   return (
     <section>
-      <div className="shadow-custom flex h-[448px] w-[288px] flex-col rounded-sm border border-black bg-[rgb(9,9,9)] md:h-[288px] md:w-[448px]">
+      <div className="flex h-[448px] w-[288px] flex-col rounded-sm border border-black bg-[rgb(9,9,9)] shadow-custom md:h-[288px] md:w-[448px]">
         {/* icon */}
         <div className="mx-4 mt-4 flex h-full space-x-4">
           <a href="https://x.com/noonyuu">
@@ -21,7 +21,7 @@ export const AboutMe = () => {
         {/* name */}
         <div className="flex h-full flex-col items-center justify-center text-white">
           <ruby className="text-6xl tracking-widest">
-            しみず<rt className="text-xl font-normal tracking-[0.5rem]">Shimizu</rt>
+            Yutaro<rt className="text-xl font-normal tracking-[0.5rem]"></rt>
           </ruby>
         </div>
         {/* other */}
