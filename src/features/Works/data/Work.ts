@@ -57,7 +57,7 @@ export class Wark {
         detail: 'コンビニやファミレスでもらったクーポンを管理するアプリ',
         skills: ['Flutter', 'Swift', 'Hono', 'D1'],
         member: 'チーム',
-        url: 'https://x.com/geek_pjt/status/1891056762037453123'
+        url: 'https://apps.apple.com/app/%E3%81%99%E3%81%94%E3%81%84%E3%82%AF%E3%83%BC%E3%83%9D%E3%83%B3%E7%AE%A1%E7%90%86%E3%82%A2%E3%83%97%E3%83%AA/id6748590912'
       },
       {
         title: 'すごい証明写真機',
